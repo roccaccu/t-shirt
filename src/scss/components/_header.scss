@@ -1,0 +1,45 @@
+@import '../variables';
+
+.header {
+	border-bottom: 1px solid $gray-line;
+	padding: 40px 0;
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media all and (max-width: 405px) {
+			justify-content: center;
+		}
+	}
+
+	&__logo {
+		display: flex;
+		@media all and (max-width: 405px) {
+			display: none;
+		}
+
+		h1 {
+			color: $orange;
+			font-size: 24px;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			font-weight: 800;
+
+			@media all and (max-width: 455px) {
+				font-size: 20px;
+			}
+
+			span {
+				color: $subcolor;
+			}
+		}
+
+		p {
+			color: #7b7b7b;
+			@media all and (max-width: 455px) {
+				font-size: 12px;
+			}
+		}
+	}
+}
